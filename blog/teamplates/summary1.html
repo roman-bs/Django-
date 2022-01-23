@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../bs/js/bootstrap.min.js"></script>
+    <link href="../bs/css/bootstrap.css" rel="stylesheet">
+    <link href="../bs/css/mystyle.css" rel="stylesheet">
+    <title>резюме</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#leadBar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="leadBar">
+                <ul class="navbar nav navbar-nav">
+                    <li><a href="site.html" class="glyphicon glyphicon-home"></a></li>
+                    <li><a href="#info">Основная информация</a></li>
+                    <li><a href="">профессиональные навыки</a></li>
+                    <li><a href="">Отображение проекта</a></li>
+                    <li><a href="">Пожалуйста, свяжитесь со мной</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1>Резюме</h1>
+    </div>
+    <div class="divContent container">
+        <div class="row">
+            <h2 class="lead">Личинка джуна</h2>
+                <div class="row text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCn5F8FUrtk2Q4XoziKCmG6wY6nbNKukj8BA&usqp=CAU" alt="boy" width="150px" class="img-responsive img-circle img-thumbnail">
+                </div>
+                <div class="row text-center">
+                    <h3>О себе</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover table-condensed">
+                        <tr>
+                            <td>имя</td>
+                            <td>Роман</td>
+                            <td>фамилия</td>
+                            <td>Романов</td>
+                            <td>возраст</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>школа 169</td>
+                            <td>университет БГЭУ</td>
+                            <td>Образование Среднее специальное</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <! - Большой экран ->
+                <div class="jumbotron">
+                    <h2>Личная честь</h2>
+                    <hr>
+                    <p2>получить звание junior</p2>
+                    <h2>мое пространство</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="https://vk.com/idroman_king"><button type="button" class="btn btn-primary">Моя страница в VK</button></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="https://github.com/roman-bs"><button type="button" class="btn btn-dark">Мой Git-Hub</button></a>
+                        </div>
+                    </div>
+                    <h2>Успехи в Python</h2>
+                    <hr>
+                    <p>1.Успешно освоил copy paste</p>
+                    <p>2.Знаю, что декоратор начинается с @</p>
+                    <p>3.есть миграции не только из страны в страну</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 id="skill" class="lead">Профессиональные навыки</h2>
+
+            <p>
+                <span class="label label-success">python</span>
+                <span class="label label-success">junior</span>
+                <!-- <span class="label label-success">ssh</span> -->
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 75%;">
+                    <span>Знаком с</span>
+                </div>
+            </div>
+            <p>
+                <span class="label label-info">SQLlite</span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 70%;">
+                    <span>Знаком с</span>
+                </div>
+            </div>
+
+            <p>
+                <span class="label label-warning">SQLAlchemy</span>
+            </p>
+
+        <div class="row">
+            <h2 class="lead">Пожалуйста, свяжитесь со мной</h2>
+            <div class="panel panel-default">
+                <div class="panel-heading">Если ты заинтересован</div>
+                <div class="panel-body">
+                    <form action="" method="post">
+                        <label class="control-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" />
+                        <br/>
+                         <div class="btn-group pull-right">
+                             <form onsubmit="alert('если Александр, то только Чайка');return false">
+                            <input type="submit" value="Отправить">
+                            </form>
+                            <form onsubmit="alert('если Александр, то только Чайка');return false">
+                            <input type="submit" value="Отправить">
+                            </form>
+
+                            <button type="reset" class="btn btn-danger">Сброс</button>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
