@@ -21,11 +21,6 @@
         </button>
             <div class="collapse navbar-collapse" id="leadBar">
                 <ul class="navbar nav navbar-nav">
-                    <li><a href="site.html" class="glyphicon glyphicon-home"></a></li>
-                    <li><a href="#info">Основная информация</a></li>
-                    <li><a href="">профессиональные навыки</a></li>
-                    <li><a href="">Отображение проекта</a></li>
-                    <li><a href="">Пожалуйста, свяжитесь со мной</a></li>
                 </ul>
             </div>
 
@@ -116,17 +111,14 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Если ты заинтересован</div>
                 <div class="panel-body">
-                    <form action="" method="post">
+                    <form action="" method="post" onsubmit="alert('если Александр, то только Чайка');return false">>
                         <label class="control-label" for="email">Email</label>
                         <input type="email" class="form-control" id="email" />
                         <br/>
                          <div class="btn-group pull-right">
-                             <form onsubmit="alert('если Александр, то только Чайка');return false">
+
+
                             <input type="submit" value="Отправить">
-                            </form>
-                            <form onsubmit="alert('если Александр, то только Чайка');return false">
-                            <input type="submit" value="Отправить">
-                            </form>
 
                             <button type="reset" class="btn btn-danger">Сброс</button>
                         </div>
