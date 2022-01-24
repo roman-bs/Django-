@@ -18,12 +18,14 @@ from django.urls import path
 from django.conf import settings
 
 from posts.views import posts_index
+from blog.views import register
 from homework.views import homework_index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', posts_index),
     path('homework/', homework_index),
+    path('register/', register),
 ]
 
 
