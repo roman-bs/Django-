@@ -1,4 +1,5 @@
 from django import forms
+from posts.models import Image
 
 
 class RegisterForm(forms.Form):
@@ -9,3 +10,9 @@ class RegisterForm(forms.Form):
         min_length=8, widget=forms.PasswordInput()
     )
     age = forms.IntegerField(min_value=18, required=False)
+
+
+class ImageForm(forms.ModelForm):
+    class Meta:
+        model = Image
+        fields = ('title', 'image')
