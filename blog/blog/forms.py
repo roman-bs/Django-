@@ -11,7 +11,6 @@ class RegisterForm(forms.Form):
     )
     age = forms.IntegerField(min_value=18, required=False)
 
-
 class ImageForm(forms.ModelForm):
     class Meta:
         model = Image

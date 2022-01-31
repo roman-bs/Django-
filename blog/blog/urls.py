@@ -15,7 +15,7 @@ Including another URLconf
 """
 import static as static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 
 from posts.views import posts_index
@@ -29,7 +29,10 @@ urlpatterns = [
     path('', posts_index),
     path('homework/', homework_index),
     path('register/', register),
-    path('upload/', image_upload_view)
+    path('upload/', image_upload_view),
+    path("api/", include(
+        "api.urls", namespace="api"
+    )),
 ]
 
 
