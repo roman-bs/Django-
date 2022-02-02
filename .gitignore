@@ -2,6 +2,7 @@
 .idea/
 
 venv/
+media/
 
 __pycache__/
 *.py[cod]
