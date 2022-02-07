@@ -1,11 +1,11 @@
+
 import logging
 
 import csv
 
 from django.conf import settings
-
-
 from django.core.management.base import BaseCommand
+
 from posts.models import Post
 
 logger = logging.getLogger(__name__)

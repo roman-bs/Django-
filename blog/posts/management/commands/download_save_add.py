@@ -21,4 +21,4 @@ class Command(BaseCommand):
                 user, _ = User.objects.get_or_create(username=row[0])
                 Post.objects.create(
                     author=user, title=row[1], slug=row[2], text=row[3]
-                )
+                )= list(dataReader)
