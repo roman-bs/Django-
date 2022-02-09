@@ -1,0 +1,18 @@
+
+  
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+<div class="col-4 product-item">
+  <div class="card">
+    {% if post.image %}
+    <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.title }}">
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-title">{{ product.title }}</h5>
+      <p class="card-text">{{ product.text }}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

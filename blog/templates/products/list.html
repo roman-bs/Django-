@@ -20,6 +20,9 @@
               <p class="card-text">
                 Cost: {{ product.cost }}$
               </p>
+                <p class="product-link">
+                 <a href="{% url "products_view" products.slug %}">About the product</a>
+                </p>
             </div>
           </div>
         </div>
