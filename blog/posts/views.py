@@ -37,4 +37,4 @@ def post_add(request):
 
 def post_view(request, slug):
     post = Post.objects.get(slug=slug)
-    return render(request, "posts/view.html", {"post": post})
+    return render(request, "posts/card.html", {"post": post})
