@@ -1,12 +1,20 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
   <div class="products">
     <h1 class="my-4">Shop</h1>
     <div class="row">
       {% for product in products %}
-        <div class="col-4 post-item">
+        <div class="col-4 product-item">
           <div class="card">
+              <div class="image-container">
+              {% if product.image %}
+                <img src="{{ product.image.url }}" class="card-img-top img-thumbnail" alt="{{ product.title }}">
+              {% else %}
+                <img src="{% static 'no-image.jpg' %}" class="card-img-top img-thumbnail" alt="No image">
+              {% endif %}
+            </div>
             <div class="card-body">
               <h5 class="card-title">{{ product.title }}</h5>
               <p class="card-text">
