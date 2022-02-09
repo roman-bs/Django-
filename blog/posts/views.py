@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 def post_list(request):
     posts = Post.objects.order_by("-id")
-    return render(request, "posts/list.html", {"posts": posts})
+    return render(request, 'posts/list.html', {"posts": posts})
 
 
 def post_admin(request):
@@ -37,4 +37,4 @@ def post_add(request):
 
 def post_view(request, slug):
     post = Post.objects.get(slug=slug)
-    return render(request, "posts/card.html", {"post": post})
+    return render(request, "posts/view.html", {"post": post})
