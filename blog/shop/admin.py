@@ -12,5 +12,5 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ["title", "cost"]
     search_fields = ["title"]
     inlines = [
-       PurchaseInline,
+        PurchaseInline,
     ]

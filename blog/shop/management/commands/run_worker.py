@@ -1,8 +1,10 @@
 from django.core.management.base import BaseCommand
 
+from shop.tasks import some_view_or_function
+
 
 class Command(BaseCommand):
-    help = "The Zen of Python"
+    help = "Run worker"
 
     def handle(self, *args, **options):
-        import this
+        some_view_or_function()

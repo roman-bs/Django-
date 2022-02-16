@@ -10,15 +10,12 @@ class Post(models.Model):
     image = models.ImageField(blank=True, null=True)
     slug = models.SlugField()
     text = models.TextField()
-    created_at = models.DateTimeField(
-        auto_now_add=True, db_index=True
-    )
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
 
     def __str__(self):
         return f"Post # {self.id} - {self.title}"
 
+
 class Tags(models.Model):
     title = models.CharField(max_length=100)
     posts = models.ManyToManyField(Post)
-
-
